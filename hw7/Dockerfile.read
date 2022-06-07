@@ -1,0 +1,9 @@
+FROM python:3.9-slim
+
+RUN pip install --upgrade pip
+RUN pip install kafka-python
+
+WORKDIR /hw7
+COPY ./kafka_read.py .
+
+CMD ["python3", "kafka_read.py"]
