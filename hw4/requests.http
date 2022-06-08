@@ -1,0 +1,70 @@
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+  "type": "reviews_for_product_id",
+  "product_id": "0385730586"
+}
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+  "type": "reviews_for_product_rating",
+  "product_id": "0385730586",
+  "star_rating": 4
+}
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+  "type": "reviews_for_customer",
+  "customer_id": "12703090"
+}
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+  "type": "most_reviewed_date",
+  "start_date": "2000-01-01",
+  "end_date": "2010-01-01",
+  "N": 5
+}
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+  "type": "most_productive_customers",
+  "start_date": "2000-01-01",
+  "end_date": "2010-01-01",
+  "N": 5
+}
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+  "type": "haters",
+  "start_date": "2000-01-01",
+  "end_date": "2010-01-01",
+  "N": 5
+}
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+
+{
+  "type": "backers",
+  "start_date": "2000-01-01",
+  "end_date": "2010-01-01",
+  "N": 5
+}
